@@ -1,2 +1,8 @@
 # Roblox-Display-Validator
-Checks whether a display name is allowed or not
+This tool is designed for mass-checking specific characters or strings to verify if they're allowed on Roblox, utilizing the Validation URL. I would suggest using this tool with a Japanese display glitched account, as that was the main motivation behind me making this originally. You can either verify a predefined string along with a specific character (the character being added to the end of the string), or a string of words using the character or string check options, which can be adjusted in the config file.
+
+# Setup
+Simply input your Roblox ID, which is used in the URL, to check the displays. There's probably a way to extract the ID from the cookie, but I can't be bothered to look it up as I'm lazy. Then, add the cookie to login. Choose either "String" or "Character" as the mode for checking. Lastly, specify a placeholder word for the "Character" mode, as it will concatenate the placeholder word and the character from list.txt (for example, "Hello (Placeholder word) ! (Character from list.txt)" becomes "Hello!" for checking, as well as "!!!" because some characters only function correctly when they are in a string by themselves. It should work without any problems. I managed to check over 8,000 lines without encountering a single rate limit. There were only around 15 error code 500s, but out of 8,000, that's a 0.002% chance. So, there's really no need to worry.
+
+# Note
+While this code works, it's not very efficient, and I wouldn't advise learning from it. If it does get patched, I might consider updating it, depending on how long it remains functional from now.
